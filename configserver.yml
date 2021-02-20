@@ -6,3 +6,10 @@ service:
   definition:
     metadata:
       uri: http://${spring.application.name}.${application.domain:cfapps.io}
+---
+spring:
+  profiles: prod
+service:
+  definition:
+    metadata:
+      uri: http://${spring.application.name}.${application.domain:cfapps.io}/prod
