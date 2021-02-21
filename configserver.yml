@@ -1,6 +1,10 @@
 info.description: configserver-main
 ---
 spring:
+  profiles:
+    active: dev, mysql
+---
+spring:
   profiles: cloud
 service:
   definition:
